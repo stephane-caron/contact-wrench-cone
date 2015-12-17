@@ -22,11 +22,12 @@ sys.path.append('../lib')
 import IPython
 import pymanoid_lite as pymanoid
 import openravepy
-import retiming
 import time
 
 from numpy import array, cross, dot, random, zeros
-from hrp4 import HRP4
+from pymanoid_lite.robots import HRP4
+from pymanoid_lite.retiming import compute_GI_face
+
 
 nb_iter = 1000000
 plot_inside = True
@@ -91,7 +92,7 @@ robot = hrp.rave
 
 t0 = time.time()
 for i in range(100):
-    CGI = retiming.compute_GI_face([hrp.right_foot, hrp.right_arm])
+    CGI = compute_GI_face([hrp.right_foot, hrp.right_arm])
 t1 = time.time()
 print "Compute GI face (100 iter):", (t1-t0) * 1000 / 100, "ms / iter"
 

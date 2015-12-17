@@ -22,11 +22,11 @@ sys.path.append('../lib')
 import IPython
 import openravepy
 
-from pymanoid_lite.trajectory import Trajectory
-from hrp4 import HRP4
 from numpy import array, dot, eye, cos, sin
 from openravepy import matrixFromPose
-from retiming import retime_whole_body_trajectory
+from pymanoid_lite.retiming import retime_whole_body_trajectory
+from pymanoid_lite.robots.hrp4 import HRP4
+from pymanoid_lite.trajectory import Trajectory
 from scipy.spatial import KDTree
 
 
@@ -175,11 +175,11 @@ def single_run(segment_id):
     contacting_links = contacting_links_for_segment(segment_id)
 
     print "\n\nWRENCH"
-    from retiming import compute_GI_face
+    from pymanoid_lite.retiming import compute_GI_face
     compute_GI_face(contacting_links)
 
     print "\n\nFORCES"
-    from retiming import compute_GI_face_forces
+    from pymanoid_lite.retiming import compute_GI_face_forces
     compute_GI_face_forces(contacting_links)
     print "\n\n"
 
