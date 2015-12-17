@@ -1,0 +1,104 @@
+[0;33;48m[plugindatabase.h:577 Create] [0;38;48m[0;33;48mFailed to create name base_imu, interface sensor
+[0;38;48m[0;33;48m[colladareader.cpp:2876 ExtractRobotAttachedSensors] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor HRP4R:gsensor
+[m[0;33;48m[colladareader.cpp:2973 _ExtractSensor] [0;38;48m[0;33;48mcollada <sensor> needs type attribute
+[0;38;48m[0;33;48m[colladareader.cpp:2876 ExtractRobotAttachedSensors] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor HRP4R:gyrometer
+[m[0;33;48m[plugindatabase.h:577 Create] [0;38;48m[0;33;48mFailed to create name base_force6d, interface sensor
+[0;38;48m[0;33;48m[colladareader.cpp:2876 ExtractRobotAttachedSensors] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor HRP4R:rfsensor
+[m[0;33;48m[plugindatabase.h:577 Create] [0;38;48m[0;33;48mFailed to create name base_force6d, interface sensor
+[0;38;48m[0;33;48m[colladareader.cpp:2876 ExtractRobotAttachedSensors] [0;38;48m[0;33;48mcannot find instance_sensor for attached sensor HRP4R:lfsensor
+[m[0;33;48m[colladareader.cpp:3918 _getJointFromRef] [0;38;48m[0;33;48mcould not find collada joint 'kmodel1/jointsid0'!
+[m[0;33;48m[colladareader.cpp:2914 ExtractRobotAttachedActuators] [0;38;48m[0;33;48mfailed to find joint kmodel1/jointsid0 in actuator WAIST
+[m[0;33;48m[kinbody.cpp:1470 SetDOFValues] [0;38;48m[0;33;48mdof 19 value is not in limits 0.000000e+00<1.221730e-02[m
+[0;33;48m[kinbody.cpp:1470 SetDOFValues] [0;38;48m[0;33;48mdof 25 value is not in limits 0.000000e+00<1.221730e-02[m
+[93mCompute CGI (2 contacts): 4.324913 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.429962 ms (0.093460 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 418.62 ms[0m
+[93mCompute CGI (2 contacts): 4.384995 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.451897 ms (0.094340 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 417.95 ms[0m
+[93mCompute CGI (2 contacts): 4.382133 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.440929 ms (0.093919 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 419.11 ms[0m
+[93mCompute CGI (2 contacts): 4.304886 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.439022 ms (0.093845 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 416.91 ms[0m
+[93mCompute CGI (2 contacts): 4.399061 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.417088 ms (0.093002 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 422.81 ms[0m
+[93mCompute CGI (2 contacts): 4.271984 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.457142 ms (0.094542 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 417.41 ms[0m
+[93mCompute CGI (2 contacts): 4.580975 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.446890 ms (0.094148 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 416.97 ms[0m
+[93mCompute CGI (2 contacts): 4.309893 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.428055 ms (0.093423 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 416.93 ms[0m
+[93mCompute CGI (2 contacts): 4.372120 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.423048 ms (0.093231 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 416.98 ms[0m
+[93mCompute CGI (2 contacts): 4.362106 ms[0m
+[93mCGI shape: (113, 6)[0m
+TOPP nb points: 25
+TOPP discrtimestep: 0.16
+[93mCompute (a, b, c) vectors (26 points): 2.410889 ms (0.092763 ms / point)[0m
+
+--------------
+Integration timestep: 0.0001
+[93mTOPP comp. time = 421.54 ms[0m
+[0;33;48m[qtcoinrave.cpp:80 DestroyPlugin] [0;38;48m[0;33;48mSoQt releasing all memory
+[0;38;48mCoin debug: socontexthandler_cleanup(): 321 context-bound resources not free'd before exit.
