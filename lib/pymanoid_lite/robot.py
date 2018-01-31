@@ -18,11 +18,10 @@
 # You should have received a copy of the GNU General Public License along with
 # pymanoid. If not, see <http://www.gnu.org/licenses/>.
 
-
 import time
 
 from errors import RobotNotFound
-from numpy import arange, array, cross, dot, eye, maximum, minimum
+from numpy import arange, array, cross, dot, eye
 from numpy import zeros, hstack, vstack, tensordot
 from openravepy import RaveCreateModule
 from rotation import crossmat

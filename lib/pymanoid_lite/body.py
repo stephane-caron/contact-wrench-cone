@@ -18,12 +18,11 @@
 # You should have received a copy of the GNU General Public License along with
 # pymanoid. If not, see <http://www.gnu.org/licenses/>.
 
-
 import openravepy
 import uuid
 
-from rotation import rotation_matrix_from_rpy, rpy_from_quat
 from numpy import array
+from rotation import rotation_matrix_from_rpy, rpy_from_quat
 
 
 class Body(object):

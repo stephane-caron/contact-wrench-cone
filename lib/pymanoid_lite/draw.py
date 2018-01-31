@@ -18,12 +18,11 @@
 # You should have received a copy of the GNU General Public License along with
 # pymanoid. If not, see <http://www.gnu.org/licenses/>.
 
-
 import itertools
 
 from numpy import array, int64, vstack, cross, dot
-from scipy.spatial import ConvexHull
 from pymanoid_lite.toolbox import norm
+from scipy.spatial import ConvexHull
 
 
 def draw_polyhedron(env, points, color=None, plot_type=6, precomp_hull=None,

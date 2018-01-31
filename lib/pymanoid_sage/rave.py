@@ -3,18 +3,20 @@
 #
 # Copyright (C) 2015 Stephane Caron <stephane.caron@normalesup.org>
 #
-# This code is free software: you can redistribute it and/or modify it under the
-# terms of the GNU General Public License as published by the Free Software
+# This file is part of pymanoid.
+#
+# pymanoid is free software: you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
 # Foundation, either version 3 of the License, or (at your option) any later
 # version.
 #
-# This code is distributed in the hope that it will be useful, but WITHOUT ANY
-# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
-# A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# pymanoid is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+# details.
 #
 # You should have received a copy of the GNU General Public License along with
-# this code. If not, see <http://www.gnu.org/licenses/>.
-
+# pymanoid. If not, see <http://www.gnu.org/licenses/>.
 
 import openravepy
 import time
@@ -105,7 +107,6 @@ class RaveRobotModel(object):
                 vel_lim[dof.index] = dof.vel_limit
             if dof.torque_limit is not None:
                 tau_lim[dof.index] = dof.torque_limit
-        #robot.SetDOFVelocityLimits(vel_lim)
         robot.SetDOFVelocityLimits(1000 * vel_lim)  # current OpenRAVE bug
 
         self.dof_llim = dof_llim
@@ -176,7 +177,6 @@ class RaveRobotModel(object):
         cmd = 'Start %d %d %d codec %d timing simtime filename %s\nviewer %s'
         cmd = cmd % (width, height, framerate, codec, fname, vname)
         recorder = openravepy.RaveCreateModule(self.env, 'viewerrecorder')
-        #codecs = recorder.SendCommand('GetCodecs') # linux only
         self.env.AddModule(recorder, '')
         recorder.SendCommand(cmd)
         self.recorder = recorder
@@ -382,7 +382,6 @@ class RaveRobotModel(object):
                 i = link.GetIndex()
                 c = link.GetGlobalCOM()
                 R = link.GetTransform()[0:3, 0:3]
-                #J_trans = self.rave.ComputeJacobianTranslation(i, c)
                 J_rot = self.rave.ComputeJacobianAxisAngle(i)
                 H_trans = self.rave.ComputeHessianTranslation(i, c)
                 H_rot = self.rave.ComputeHessianAxisAngle(i)
@@ -416,11 +415,9 @@ class RaveRobotModel(object):
                 I_ci = link.GetLocalInertia()
                 Ri = link.GetTransform()[0:3, 0:3]
                 ri = dot(Ri, link.GetLocalCOM())
-                #linvel = link_velocities[link.GetIndex()][:3]
                 angvel = link_velocities[link.GetIndex()][3:]
                 linacc = link_accelerations[link.GetIndex()][:3]
                 angacc = link_accelerations[link.GetIndex()][3:]
-                #ci_dot = linvel + cross(angvel, ri)
                 ci_ddot = linacc \
                     + cross(angvel, cross(angvel, ri)) \
                     + cross(angacc, ri)
