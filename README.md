@@ -1,25 +1,6 @@
-# Leveraging Cone Double Description for Multi-contact Stability of Humanoids with Applications to Statics and Dynamics
+# Centroidal wrench cone
 
 Source code for http://www.roboticsproceedings.org/rss11/p28.pdf
-
-## Abstract
-
-We build on previous works advocating the use of the Gravito-Inertial Wrench
-Cone (GIWC) as a general contact stability criterion (a "ZMP for non-coplanar
-contacts"). We show how to compute this wrench cone from the friction cones of
-contact forces by using an intermediate representation, the surface contact
-wrench cone, which is the minimal representation of contact stability for each
-surface contact. The observation that the GIWC needs to be computed only once
-per stance leads to particularly efficient algorithms, as we illustrate in two
-important problems for humanoids : "testing robust static equilibrium" and
-"time-optimal path parameterization". We show, through theoretical analysis and
-in physical simulations, that our method is more general and/or outperforms
-existing ones.
-
-Authors:
-[Stéphane Caron](https://scaron.info),
-[Quang-Cuong Pham](https://www.normalesup.org/~pham/) and
-[Yoshihiko Nakamura](http://www.ynl.t.u-tokyo.ac.jp/)
 
 ## Content
 
